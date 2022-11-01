@@ -17,11 +17,7 @@ const VideoDetail = () => {
     );
   }, [id]);
 
-  console.log(videoDetail)
-
-  const {
-    snippet: { title },
-  } = videoDetail;
+  const { snippet: { title }} = videoDetail
 
   return (
     <Box minHeight="95vh">
@@ -33,6 +29,9 @@ const VideoDetail = () => {
               className="react-player"
               controls
             />
+            <Typography color="#fff" variant="h5" fontWeight="bold" p={2}>
+              
+            </Typography>
           </Box>
         </Box>
       </Stack>
